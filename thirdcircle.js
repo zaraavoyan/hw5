@@ -50,8 +50,6 @@ function draw() {
 }
 
 function paint(circle) {
-	colorMode(HSB);
-	fill(circle.h, 100, 100);
   ellipse(circle.x, circle.y, circle.r * 2, circle.r * 2);
 }
 
@@ -66,5 +64,4 @@ function bounce(circle) {
   }
   if (circle.y > height || circle.y < 0) {
     circle.vy = - circle.vy;
-  }
-}
+  }}
