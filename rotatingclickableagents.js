@@ -57,4 +57,29 @@ agents.push({
 	angle: random(PI),
 });
 }
+unction activateAgent(agent) {
+  if (random(100) < 1) {
+    agent.state = floor(random(3));
+  }
 
+  if (agent.state == 1) {
+    agent.angle += PI / 5;
+  }
+
+  if (agent.state == 2) {
+    agent.x += cos(agent.angle) / 2;
+    agent.y += sin(agent.angle) / 2;
+
+    if (agent.x > width) {
+      agent.x = 3;
+    } else if (agent.x < 3) {
+      agent.x = width;
+    }
+
+    if (agent.y > height) {
+      agent.y = 0;
+    } else if (agent.y < 0) {
+      agent.y = height;
+    }
+  }
+}
