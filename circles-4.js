@@ -35,10 +35,7 @@ function drawCircles() {
 }
 
 function translateCircles() {
-// circle.x += circle.vx; // circle.x = circle.x + circle.vx
-//   circle.y += circle.vy;
-// 	if (circle.x > 100) {
-// 	circle.x = 95}
+
 	
  y +=10; 
 	if (y > 350) {
