@@ -57,7 +57,7 @@ agents.push({
 	angle: random(PI),
 });
 }
-unction activateAgent(agent) {
+function activateAgent(agent) {
   if (random(100) < 1) {
     agent.state = floor(random(3));
   }
